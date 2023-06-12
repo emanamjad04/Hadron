@@ -1,0 +1,456 @@
+*
+{
+padding:0px;
+margin:0px;
+}
+.head
+{
+    background-image:url(images/back2.jpg);
+	
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	position:relative;
+}
+#logo	
+{
+	width:60px;
+	height:40px;
+	margin:5px;
+	
+}
+#homediv
+{
+	width:200px;
+	height:300px;
+	position:center;
+}
+#password
+{
+	width:100%;
+	height:30px;
+	border-radius:50px;
+	
+}
+#rollno
+{
+	width:100%;
+	height:30px;
+	border-radius:50px;
+	
+}
+.info
+{
+    text-decoration:none;
+	size:30px;
+	color:black;
+	font-family:broadway;
+	position:left;
+	
+}
+h1
+{
+	font-size:50px;
+	color:black;
+	text-decoration:none;
+    border:0px;
+}
+fieldset
+{
+	width:300px;
+	font-weight:bold;
+    position:center;
+	border:6px solid black;
+}
+
+a: visited{
+	text-decoration:none;
+}
+#imposter
+{
+	width:100px;
+	height:100px;
+}
+h4
+{
+	font-family:sans-serif;
+	color:#fbc02d;
+	margin-left:15px;
+}
+.loginandform
+{
+	width:160px;
+	height:30px;
+	border-radius:15px;
+	background-color:#fbc02d;
+	color:white;
+	border-color:#fbc02d;
+	border-bottom:#fbc02d;
+}
+
+.o1
+{
+	font-family:sans-serif;
+	margin-left:150px;
+	font-weight:900;
+	font-size:60px;
+}
+.o3
+{
+	background-color:#fbc02d;
+	border:500px;
+	display:inline;
+	font-weight:900;
+}
+
+#side
+{
+	background-image:url(images/top.jpg);
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	position:relative;
+}
+#belowsec
+{
+	background-image:url(images/below.png);
+	background-repeat:no-repeat;
+	width:100%;
+	height:350px;
+	background-color:white;
+	margin-left:80px;
+	
+}
+.y
+{
+	
+	display:inline;
+	color:#fbc02d;
+}
+.w
+{
+
+	display:inline;
+	color:white;
+}
+#extradiv
+{
+	height:150px;
+	width:150px;
+	float:left;
+}
+.course
+{
+	float:left;
+	margin-right:60px;
+	width:200px;
+	height:150px;
+	border-radius:2px;
+	background-color:black;
+	color:#fbc02d;
+	font-family: 'Black Ops One', cursive;
+	font-size:30px;
+	margin-bottom:90px;
+	margin-top:90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+#formargin
+{
+	margin-right:180px;
+}
+#contactbutton
+{
+	width:160px;
+	height:40px;
+	border-radius:5px;
+	background-color:transparent;
+	color:white;
+	border:1px solid white;
+	font-weight:2px;
+}
+#contactbutton:hover
+{
+	background-color:#fbc02d;
+	transition:1s;
+	
+}
+.course:hover
+{
+	float:left;
+	margin-right:60px;
+	width:200px;
+	height:150px;
+	border-radius:2px;
+	background-color:white;
+	color:black;
+	font-family: 'Black Ops One', cursive;
+	font-size:30px;
+	margin-bottom:100px;
+	margin-top:100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition:0.5s;
+	border:4px solid #fbc02d;
+	
+}
+#get
+{
+	background-color:rgba(253, 253, 150,0.6);
+	font-size:20px;
+	width:100%;
+	height:300px;
+}
+#color1
+{
+	color:#fbc02d;
+	font-family: 'Assistant';
+	font-size:30px;
+	margin-left:350px;
+	margin-right:320px;
+}
+#color1:hover
+{
+	color:black;
+	font-family: 'Assistant';
+	font-size:30px;
+	border-bottom:1px solid black;
+	margin-left:350px;
+	margin-right:320px;
+}
+#color1pt2
+{
+
+	color:#fbc02d;
+	font-family: 'Assistant';
+	font-size:30px;
+	margin-left:450px;
+	margin-right:410px;
+}
+#color1pt2:hover
+{
+
+	color:black;
+	font-family: 'Assistant';
+	font-size:30px;
+	margin-left:450px;
+	margin-right:410px;
+	border-bottom:1px solid black;
+}
+#color1pt3
+{
+	color:#fbc02d;
+	font-family: 'Assistant';
+	font-size:30px;
+	margin-left:550px;
+	margin-right:460px;
+}
+#color1pt3:hover
+{
+	color:black;
+	font-family: 'Assistant';
+	font-size:30px;
+	margin-left:550px;
+	margin-right:460px;
+	border-bottom:1px solid black;
+}
+
+
+#color2
+{
+	color:black;
+	margin-left:390px;
+	margin-right:320px;
+	font-family: 'Assistant';
+	font-size:30px;
+	
+}
+#color2:hover
+{
+	color:#fbc02d;
+	margin-left:390px;
+	margin-right:320px;
+	font-family: 'Assistant';
+	font-size:30px;
+	border-bottom:1px solid black;
+	
+}
+#color2p2
+{   
+  
+    color:black;
+	margin-left:570px;
+	margin-right:500px;
+	font-family: 'Assistant';
+	font-size:30px;	
+}
+#color2p2:hover
+{   
+  
+    color:#fbc02d;
+	margin-left:570px;
+	margin-right:500px;
+	font-family: 'Assistant';
+	font-size:30px;	
+	border-bottom:1px solid black;
+}
+
+
+#coursesec
+{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+}
+.htmlcourses
+{
+	width:300px;
+	height:60px;
+	color:black;
+	background-color:#fbc02d;
+	text-decoration:none;
+	border-radius:5px;
+	border:#fbc02d;
+	margin-top:80px;
+	margin-right:600px;
+	margin-left:180px;
+}
+.htmlcourses:hover
+{
+	width:300px;
+	height:60px;
+	color:#fbc02d;
+	background-color:rgba(0,0,0,0.8);
+	text-decoration:none;
+	border-radius:5px;
+	border:#fbc02d;
+	margin-top:80px;
+	margin-right:600px;
+	margin-left:180px;
+}
+
+#htmlsec
+{
+	
+	background-image:url(images/courseback.jpg);
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	position:relative;
+	background-attachment:fixed;
+}
+#h
+{
+	color:white;
+	font-size:100px;
+	font-family: 'Bebas Neue', cursive;
+	
+}
+#formdiv
+{ 
+    background:rgba(0,0,0,0.5);
+	color:white;
+	font-family:sans-serif;
+	width:380px;
+	height:480px;
+	position:relative;
+   margin-left:80px;
+   display:block;
+   padding:5px;
+   background-color:linear-gradient(to right,blue 0%,red 100%);
+   background-blend-mode:darken;
+}
+#formsec
+{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	
+}
+.o4
+{
+    font-family:sans-serif;
+	font-weight:900;
+	font-size:60px;	
+}
+.o5
+{
+	font-family:sans-serif;
+    background-color:#fbc02d;
+	border:500px;
+	display:inline;
+	font-weight:900;
+    font-size:60px;	
+}
+.div1
+{
+	background-color:#fbc02d;
+	background-attachment:fixed;
+	text-align:left;
+}
+#cback
+{
+	background-image:url(images/cback2.png);
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	position:relative;
+}
+.excellence
+{
+	padding:30px;
+	float:left;
+	width:600px;
+	height:600px;
+}
+.skill
+{
+	margin-left:150px;
+	font-size:50px;
+	font-family: 'Assistant';
+	width:0ch;
+	overflow:hidden;
+	white-space:nowrap;
+	animation:text 6s infinite alternate;
+	border-right:3px solid black;
+}
+@keyframes text
+{
+	0%{
+		width:0ch;
+	}
+	50%{
+		width:20ch;
+	}
+}
+.fontform
+{
+	margin-left:50px;
+	
+}
+#cbackjava
+{
+	background-image:url(images/cbackjava.png);
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	position:relative;
+}
+#cbackcss
+{
+	background-image:url(images/cbackcss.png);
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	position:relative;
+}

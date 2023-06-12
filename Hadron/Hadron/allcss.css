@@ -1,0 +1,240 @@
+
+#ul1{
+  
+  margin-top: 8px;
+  text-align:right;
+  
+}
+.li1
+{
+  
+  display: inline;
+  margin: 8px;
+  font-size: 18px;
+}
+#homediv1
+{
+  background-color:#B2B2B2;
+  height: 65px;
+}
+.about
+{
+  text-align: center;
+	float:left;
+	margin-right:60px;
+	width:200px;
+	height:150px;
+	border-radius:2px;
+	background-color:black;
+	color:#B2B2B2;
+	font-family:Assistant;
+	font-size:30px;
+	margin-bottom:90px;
+	margin-top:90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.about:hover
+{
+	float:left;
+	margin-right:60px;
+	width:200px;
+	height:150px;
+	border-radius:2px;
+	background-color:white;
+	color:black;
+	font-family: Assistant;
+	font-size:30px;
+	margin-bottom:100px;
+	margin-top:100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition:0.5s;
+	border:4px solid #B2B2B2;
+	
+}
+#about_div
+{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+  height:250px;
+  
+}
+
+.ppl_name
+{
+  display: inline;
+  margin: 90px;
+  font-size: 18px;
+}
+h6{
+  margin-top: 280px;
+  
+}
+#h31{
+  margin-left: 90px;
+}
+#h32{
+  margin-left: 45px;
+}
+#h33{
+  margin-left: 65px;
+}
+
+
+#consultation_div
+{
+  margin-top: 80px;
+}
+.heading
+{
+  background-color: #B2B2B2;
+  font-family:Assistant;
+  height: 80px;
+  width: 215px;
+  font-weight:900;
+  font-size:40px;
+  position:center;
+	border:500px;
+	display:inline;
+  
+  }
+#head_div2
+{
+
+  width: 135px;
+  display:flex;
+	flex-direction:row;
+	justify-content:center;
+  height: 80px;
+
+}
+#head_div1
+{
+
+  display:flex;
+	flex-direction:row;
+	justify-content:center;
+  height: 80px;
+
+}
+#head_div4
+{
+
+  display:flex;
+	flex-direction:row;
+	justify-content:center;
+  height: 80px;
+  width:400px;
+
+}
+fieldset
+{
+	width:580px;
+	font-weight:bold;
+  position:center;
+	border:3px solid #B2B2B2;
+}
+#round
+{
+  border-radius:60%;
+  height: 185px;
+}
+#aep{
+  margin-top: 20px;
+  float: left;
+  width: 50%;
+  border-right: white solid 5px;
+}
+#links{
+  margin-top: 20px;
+  float: left;
+  width: 48%;
+}
+  * {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+footer {
+  background-color: #b2b2b2;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 180px;
+}
+
+.contact-details {
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.contact-heading {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.address,
+.email,
+.phone {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+i {
+  margin-right: 10px;
+  margin-left: 60px;
+}
+
+.address p,
+.email p,
+.phone p {
+  margin: 0;
+  
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#links p{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.heading
+{
+  background-color: whitesmoke;
+  font-family:Assistant;
+  height: 80px;
+  width: 215px;
+  font-weight:900;
+font-size:40px;
+  position:center;
+	border:500px;
+	display:inline;
+  
+  }
+ #contact_container
+ {
+   margin-top: 10px;
+ }
+ 
+.about img {
+
+  max-width: 100%;
+  max-height: 100%;
+}

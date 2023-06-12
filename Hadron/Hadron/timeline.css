@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #B2B2B2;
+  /* background-color: #b2b2b2; */
+}
+ 
+#projectinfo{
+    width: 40%;
+    float: left;
+    color: whitesmoke;
+    border: whitesmoke 5px solid;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+#projectinfo > *{
+    margin-bottom: 20px;
+    font-weight: lighter;
+    font-size: larger;
+    margin-left: 5px;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.steps {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.step {
+  display: flex;
+  position: relative;
+}
+.step:after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 32px;
+  height: 0;
+  width: 2px;
+  background-color: black;
+  /* background-color: #b2b2b2; */
+}
+.step .info {
+  margin: 8px 0 20px;
+}
+.step .title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 8px;
+  color: white;
+}
+.step .text {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  padding-bottom: 0;
+  margin: 0;
+}
+.step:not(:last-child):after {
+  height: 75%;
+}
+
+.number {
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid black;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 14px;
+}
+.number.completed {
+  background-color: black;
+}
+.number svg {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+.number svg path {
+  fill: white;
+}
+.clientsidebtns{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  
+    padding: 5px;
+    border-radius: 5%;
+  }
+.heading
+{
+  background-color: black;
+  font-family:Assistant;
+  height: 200px;
+  width: 335px;
+  font-weight:900;
+font-size:30px;
+  position:center;
+	border:500px;
+	display:inline;
+   margin-left:80px;
+margin-bottom:90px;
+
+  
+  }
+#head_div2
+{
+
+  width: 335px;
+  display:flex;
+	flex-direction:row;
+	justify-content:center;
+  height: 200px;
+
+}

@@ -1,0 +1,131 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+form {
+    margin-bottom: 20px;
+  }
+  
+  legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 3em;
+  }
+  
+  form label {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  form input[type="checkbox"] {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  form input[type="date"] {
+    width: 150px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  form br {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  form input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #B2B2B2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* this has to be there */
+  input, select, button{
+    padding: 5px;
+    border-radius: 5%;
+  }
+
+  table, th, td{
+    border : 1px solid;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+  }
+
+  table{
+    width: 100%;
+  }
+
+  /* div{
+    border: 1px solid black;
+  } */
+
+  #head_div
+{
+  margin-top: 15px;
+  display:flex;
+	flex-direction:row;
+	justify-content:center;
+  height: 80px;
+
+}
+
+.heading
+{
+  background-color: #B2B2B2;
+  font-family:Assistant;
+  height: 80px;
+  width: 215px;
+  font-weight:900;
+	font-size:60px;
+  position:center;
+	border:500px;
+	display:inline;
+  
+  }
+
+  #container_grid{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    row-gap: 20px;
+  }
+
+  #container_grid span{
+    margin-left: 20px;
+    width: 80%;
+  }
+
+  #container_grid input[type="date"] {
+    width: 80%; /* take full width of their container */
+  }
+
+  #ul1{
+    text-align:right;
+    margin-top: 8px;
+  }
+  .li1
+  {
+    display: inline;
+    margin: 8px;
+    font-size: 18px;
+  }
+  #homediv1
+  {
+    background-color:#B2B2B2;
+    height: 75px;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+  #client_div, #project_div, #inventory_div{
+    box-shadow: 1px 4px 10px 1px #aaa;
+    padding: 10px;
+  }

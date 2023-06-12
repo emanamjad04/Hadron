@@ -160,28 +160,28 @@
                 $amount = $_POST['transaction_amount'];
                 if($_POST['transaction_type'] == "iss"){
                     $issued = $amount;
-                    $recieved = '';
+                    $recieved = NULL;
                 } else if($_POST['transaction_type'] == "rec"){
                     $recieved = $amount;
-                    $issued = '';
+                    $issued = NULL;
                 }
                 if($_POST['transaction_with'] == "supplier"){
                     $tsupplier_id = $_POST['suppliers'];
-                    $toffice_id = '';
-                    $tclient_id = '';
+                    $toffice_id = NULL;
+                    $tclient_id = NULL;
                 } else if($_POST['transaction_with'] == "client"){
-                    $tsupplier_id = '';
+                    $tsupplier_id = NULL;
                     $toffice_id = $_POST['offices'];
-                    $tclient_id = '';
+                    $tclient_id = NULL;
                 } else if($_POST['transaction_with'] == "office"){
-                    $tsupplier_id = '';
-                    $toffice_id = '';
+                    $tsupplier_id = NULL;
+                    $toffice_id = NULL;
                     $tclient_id = $_POST['clients'];
                 }
                 if(isset($_POST['transaction_remarks'])){
                     $remarks = $_POST['transaction_remarks'];
                 }else{
-                    $remarks = '';
+                    $remarks = NULL;
                 }
                 
                 

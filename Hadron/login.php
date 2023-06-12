@@ -94,7 +94,7 @@ if (match == "1") {
 <section class="head">
 
 <nav >
-<a href="home.php"><img id="logo" src="images/finallogo.png"></a>
+<a href="home.php"><img id="logo" src="images/logo.png"></a>
 <h4>by E.M</h4>
 </nav>
 <center>

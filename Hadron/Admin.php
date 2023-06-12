@@ -291,11 +291,11 @@
             <a href="#inventory_div"><li class="li1">INVENTORY</li></a>
         </ul>
     </div>
-    <center><div id="head_div" class="heading"><h1> ABOUT</h1></div></center>
+    <center><div id="head_div" class="heading" style="margin-bottom: 60px;"><h1 style="letter-spacing:2px">ADMIN</h1></div></center>
     <div id=admin_container>
         <div id ="client_div">
         <fieldset>
-    <legend>Add Client</legend>
+    <legend id="head_div" class="heading" style="margin-bottom:50px ; font-size:40px">Add Client</legend>
             <div id="homediv">
             <form name="form" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
             Client ID:<input type="text" name="addclientid"/>
@@ -309,7 +309,7 @@
             <br><br><br>
 
             <fieldset>
-            <legend>Change Status</legend>
+            <legend id="head_div" class="heading" style="margin-bottom:50px ; font-size:40px">Change Status</legend>
                 <div>
                     <form name="form" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
                     
@@ -329,7 +329,7 @@
         <div id="project_div">
             <div id="create_project">
                 <form id="create_project_form" name="create_project_form" method="post">
-                    <legend>Create Project</legend>
+                    <legend id="head_div" class="heading" style="margin-bottom:50px ; font-size:40px">Create Project</legend>
                     <label for="clientName"> Client: </label>
                     <select name="clientName" id="clientName">
                     </select>
@@ -342,7 +342,8 @@
             </div>
             <div id="create_timeline">
                 <form id="create_timeline_form" name="create_timeline_form" method="post" onsubmit="return validateCreateTimeline()">
-                    <legend>Create Project Timeline</legend>
+                    <legend id="head_div" class="heading" style="margin-bottom:50px ; font-size:40px">Create Project Timeline</legend>
+                    <br><br>
                     <label for="projectName">Project</label>
                     <select name="projectName" id="projectName">
                     </select>
@@ -420,7 +421,8 @@
             </div>
             <div id="update_timeline">
             <form id="update_timeline_form" name="update_timeline_form" method="post">
-                <legend>Update Project Timeline</legend>
+                <legend id="head_div" class="heading" style="margin-bottom:50px ; font-size:40px">Update Project Timeline</legend>
+                <br><br>
                 <label for="projectName2">Project</label>
                 <select name="projectName2" id="projectName2">
                 </select>
@@ -430,12 +432,12 @@
         </div>
         <div id="inventory_div">
             <div id="view_inventory">
-                <legend>View Inventory</legend>
+                <legend id="head_div" class="heading" style="margin-bottom:50px ; font-size:40px">View Inventory</legend>
                 <button id="view_inventory" onclick="viewInventory(event)">View Inventory</button>
             </div>
             <div id="add_items">
                 <form id="add_items_form" name="add_items_form" method="post">
-                    <legend>Add Items</legend>
+                    <legend id="head_div" class="heading" style="margin-bottom:50px ; font-size:40px">Add Items</legend>
                     <label for="item_name">Item Name: </label>
                     <input type="text" id="item_name" name="item_name"/>
                     <label for="item_brand">Brand: </label>
@@ -447,7 +449,7 @@
             </div>
             <div id="manage_transactions">
                 <form id="manage_transactions_form" name="manage_transactions_form" method="post">
-                    <legend>Manage Transactions</legend>
+                    <legend id="head_div" class="heading" style="margin-bottom:50px ; font-size:40px">Manage Transactions</legend>
                     <input type = "radio" value="iss" name="transaction_type" id="transaction_iss"/>
                     <label for="transaction_iss">Issued</label>
                     <input type = "radio" value="rec" name="transaction_type" id="transaction_rec"/>

@@ -40,13 +40,13 @@
         }
         session_start();
         $user=$_SESSION['s_client_id'];
-        echo "$user";
+        // echo "$user";
 
      $stmpt=$db->prepare("SELECT projectId FROM project where clientID='$user' ");
      $stmpt->execute();
 
     $project_id = $stmpt->fetchColumn();
-    echo "pD "."'$project_id'";
+    // echo "pD "."'$project_id'";
     $stmt = $db->query("CALL GetTimelineSteps($project_id);");
     $steps = $stmt->fetchAll(PDO::FETCH_ASSOC);
     // echo("<pre>\n");
@@ -76,8 +76,9 @@
     <div style="text-align:right">
     <input type="submit" class="clientsidebtns" value="logout" onclick='logout()'/></div>
     <form name="form" action="complaint.php" method="post">
-    <h1>ADD COMPLAINT</h1>
-    <input type="Text" name="comp_des" placeholder="ABC.."/>
+    <div id="head_div2" class="heading" style=" background-color:white; "><h1>ADD COMPLAINT</h1></div></center>
+
+    <input type="Text" name="comp_des" placeholder="In sector .."/>
     <input type="submit" class="clientsidebtns" value="Submit"  /> <br><br><br>
     </form>
     <input type="button" class="clientsidebtns" id="pre_comp_btn" value="Previous Complaints"/>

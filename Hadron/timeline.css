@@ -7,7 +7,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #001829;
+  background-color: #B2B2B2;
   /* background-color: #b2b2b2; */
 }
  
@@ -53,7 +53,7 @@ body {
   top: 32px;
   height: 0;
   width: 2px;
-  background-color: #007ea7;
+  background-color: black;
   /* background-color: #b2b2b2; */
 }
 .step .info {
@@ -80,7 +80,7 @@ body {
   height: 32px;
   background-color: transparent;
   border-radius: 50%;
-  border: 2px solid #007ea7;
+  border: 2px solid black;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
@@ -91,7 +91,7 @@ body {
   margin-right: 14px;
 }
 .number.completed {
-  background-color: #007ea7;
+  background-color: black;
 }
 .number svg {
   width: 16px;
@@ -104,7 +104,7 @@ body {
 .clientsidebtns{
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: black;
     color: white;
     border: none;
     border-radius: 4px;
@@ -113,3 +113,29 @@ body {
     padding: 5px;
     border-radius: 5%;
   }
+.heading
+{
+  background-color: black;
+  font-family:Assistant;
+  height: 200px;
+  width: 335px;
+  font-weight:900;
+font-size:30px;
+  position:center;
+	border:500px;
+	display:inline;
+   margin-left:80px;
+margin-bottom:90px;
+
+  
+  }
+#head_div2
+{
+
+  width: 335px;
+  display:flex;
+	flex-direction:row;
+	justify-content:center;
+  height: 200px;
+
+}

@@ -36,10 +36,10 @@
     // }
 
     function getTimeline($projectId) {
-      global $pdo;
+      global $db;
       // echo "function inside php was called";
       // Use the $projectId parameter in your code
-      $stmt = $pdo->prepare("CALL getTimelineSteps(:projectId)");
+      $stmt = $db->prepare("CALL getTimelineSteps(:projectId)");
       $stmt->bindParam(':projectId', $projectId, PDO::PARAM_STR);
       $stmt->execute();
       $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -47,10 +47,10 @@
   }
 
   function viewInventory(){
-    global $pdo;
+    global $db;
       // echo "function inside php was called";
       // Use the $projectId parameter in your code
-      $stmt = $pdo->query("CALL getAllItems();");
+      $stmt = $db->query("CALL getAllItems();");
       $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
       echo json_encode($rows);
   }

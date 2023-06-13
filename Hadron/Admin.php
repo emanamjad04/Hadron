@@ -160,28 +160,28 @@
                 $amount = $_POST['transaction_amount'];
                 if($_POST['transaction_type'] == "iss"){
                     $issued = $amount;
-                    $recieved = NULL;
+                    $recieved = null;
                 } else if($_POST['transaction_type'] == "rec"){
                     $recieved = $amount;
-                    $issued = NULL;
+                    $issued = null;
                 }
                 if($_POST['transaction_with'] == "supplier"){
                     $tsupplier_id = $_POST['suppliers'];
-                    $toffice_id = NULL;
-                    $tclient_id = NULL;
+                    $toffice_id = null;
+                    $tclient_id = null;
                 } else if($_POST['transaction_with'] == "client"){
-                    $tsupplier_id = NULL;
+                    $tsupplier_id = null;
                     $toffice_id = $_POST['offices'];
-                    $tclient_id = NULL;
+                    $tclient_id = null;
                 } else if($_POST['transaction_with'] == "office"){
-                    $tsupplier_id = NULL;
-                    $toffice_id = NULL;
+                    $tsupplier_id = null;
+                    $toffice_id = null;
                     $tclient_id = $_POST['clients'];
                 }
                 if(isset($_POST['transaction_remarks'])){
                     $remarks = $_POST['transaction_remarks'];
                 }else{
-                    $remarks = NULL;
+                    $remarks = null;
                 }
                 
                 
@@ -260,12 +260,14 @@
     <script>
         var choice1="consultation";
         var choice2="complaint";
+        var sql2="";
         const cols = ["fullname","contact","address","email","complaint_no","complaint_description","complaint_status","client_id"];
         $(document).ready(function(){
             $("#consul").click(function(){
                 $("#consuldiv").load("comp_consul_table.php",{
                     action:"showconsultation_action",
                     data: choice1,
+                    where:sql2,
                     cols:cols.slice(0,4)
                 
                 });
@@ -274,6 +276,7 @@
                 $("#compdiv").load("comp_consul_table.php",{
                     action:"showcomplaint_action",
                     data: choice2,
+                    where:sql2,
                     cols:cols.slice(4,8)
                 
                 });

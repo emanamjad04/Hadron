@@ -8,13 +8,19 @@
   integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
   crossorigin="anonymous"></script>
     <script>
+        <?php
+          session_start();
+          $user=$_SESSION['s_client_id'];
+        ?>
         var choice3="complaint";
+        var sql2="WHERE client_id ='<?php echo $user ?>' ";
         const cols = ["complaint_no","complaint_description","complaint_status","client_id"];
         $(document).ready(function(){
             $("#pre_comp_btn").click(function(){
                 $("#pre_comp_div").load("comp_consul_table.php",{
                     // action:"showcomp_action",
                     data: choice3,
+                    where:sql2,
                     cols:cols
                 
                 });
@@ -28,7 +34,7 @@
      
         "/br";
         if(isset($_POST['comp_des'])){
-            session_start();
+            // session_start();
             $user=$_SESSION['s_client_id'];
             $stmpt=$db->prepare("INSERT INTO complaint (complaint_description,complaint_status,client_id) values (?,?,?) ");
             $des=$_POST['comp_des'];
@@ -38,7 +44,7 @@
             $stmpt->bindParam(3,$user);
             $stmpt->execute();
         }
-        session_start();
+        // session_start();
         $user=$_SESSION['s_client_id'];
         // echo "$user";
 
@@ -75,7 +81,7 @@
 
     <div style="text-align:right">
     <input type="submit" class="clientsidebtns" value="logout" onclick='logout()'/></div>
-    <form name="form" action="complaint.php" method="post">
+    <form name="form"  method="post">
     <div id="head_div2" class="heading" style=" background-color:white; "><h1>ADD COMPLAINT</h1></div></center>
 
     <input type="Text" name="comp_des" placeholder="In sector .."/>

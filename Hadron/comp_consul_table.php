@@ -1,5 +1,6 @@
 <?php
 $choice =$_POST['data'];
+$whereclause=$_POST['where'];
 // $choice = isset($_POST['data']) ? $_POST['data'] : '';
 // var_dump($choice); 
 
@@ -10,7 +11,7 @@ try{
     catch(Exception $e){
      echo  $e->getMessage();
     }
-    $stmpt2=$db->prepare("SELECT * FROM  $choice");
+    $stmpt2=$db->prepare("SELECT * FROM  $choice $whereclause");
     $stmpt2->execute();
     $rows=$stmpt2->fetchall(PDO::FETCH_ASSOC);
     echo '<table border=1>';

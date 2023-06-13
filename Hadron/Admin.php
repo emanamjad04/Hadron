@@ -292,6 +292,8 @@
             <a href="#client_div"><li class="li1">CLIENT</li></a>
             <a href="#project_div"><li class="li1" >PROJECT</li></a>
             <a href="#inventory_div"><li class="li1">INVENTORY</li></a>
+            <a href="home.php"><li class="li1">LOGOUT</li></a>
+
         </ul>
     </div>
     <center><div id="head_div" class="heading" style="margin-bottom: 60px;"><h1 style="letter-spacing:2px">ADMIN</h1></div></center>
